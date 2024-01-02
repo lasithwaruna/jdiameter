@@ -149,6 +149,7 @@
       <!-- Create module and deployment structure -->
       <plugin>
         <artifactId>maven-antrun-plugin</artifactId>
+        <version>1.8</version>
         <executions>
           <execution>
             <id>deploy</id>
@@ -239,9 +240,6 @@
                 <!--
                 <delete dir="target/${project.build.finalName}"/>
                 -->
-                <delete file="target/${project.build.finalName}.sar"/>
-                <delete file="target/${project.build.finalName}.zip"/>
-                <delete file="${basedir}/target/modules/${MUX}/main/restcomm-diameter-mux-${project.version}-tmp.zip"/>
 
                 <!-- Copy to JBOSS: DIAMETER, MUX and EXTENSION -->
                 <!-- Update JBOSS configuration for EXTENSION -->

@@ -4,8 +4,8 @@
 
   <parent>
     <groupId>org.mobicents</groupId>
-    <artifactId>restcomm-parent</artifactId>
-    <version>2.27.47</version>
+    <artifactId>restcomm-ex-parent</artifactId>
+    <version>2.27-SNAPSHOT</version>
   </parent>
 
   <groupId>org.mobicents.diameter</groupId>
@@ -82,27 +82,7 @@
           <additionalparam>-Xdoclint:none</additionalparam>
         </configuration>
       </plugin>
-      <plugin>
-        <groupId>org.sonatype.plugins</groupId>
-        <artifactId>nexus-staging-maven-plugin</artifactId>
-        <version>1.6.7</version>
-        <extensions>true</extensions>
-        <configuration>
-          <serverId>restcomm-releases-repository</serverId>
-          <nexusUrl>https://oss.sonatype.org/</nexusUrl>
-        </configuration>
-        <executions>
-          <execution>
-            <id>deploy-to-sonatype</id>
-            <phase>deploy</phase>
-            <goals>
-              <goal>deploy</goal>
-              <!--goal>close</goal-->
-              <goal>release</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
+
 
       <!-- Checkstyle -->
       <plugin>
